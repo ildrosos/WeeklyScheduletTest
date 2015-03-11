@@ -20,17 +20,17 @@ namespace ComputerMindTest {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("contactsDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class contactsDataSet1 : global::System.Data.DataSet {
+    public partial class DataSet1 : global::System.Data.DataSet {
         
-        private Πίνακας1DataTable tableΠίνακας1;
+        private contactsDataTable tablecontacts;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public contactsDataSet1() {
+        public DataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace ComputerMindTest {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected contactsDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace ComputerMindTest {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Πίνακας1"] != null)) {
-                    base.Tables.Add(new Πίνακας1DataTable(ds.Tables["Πίνακας1"]));
+                if ((ds.Tables["contacts"] != null)) {
+                    base.Tables.Add(new contactsDataTable(ds.Tables["contacts"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace ComputerMindTest {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Πίνακας1DataTable Πίνακας1 {
+        public contactsDataTable contacts {
             get {
-                return this.tableΠίνακας1;
+                return this.tablecontacts;
             }
         }
         
@@ -127,7 +127,7 @@ namespace ComputerMindTest {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            contactsDataSet1 cln = ((contactsDataSet1)(base.Clone()));
+            DataSet1 cln = ((DataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace ComputerMindTest {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Πίνακας1"] != null)) {
-                    base.Tables.Add(new Πίνακας1DataTable(ds.Tables["Πίνακας1"]));
+                if ((ds.Tables["contacts"] != null)) {
+                    base.Tables.Add(new contactsDataTable(ds.Tables["contacts"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace ComputerMindTest {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableΠίνακας1 = ((Πίνακας1DataTable)(base.Tables["Πίνακας1"]));
+            this.tablecontacts = ((contactsDataTable)(base.Tables["contacts"]));
             if ((initTable == true)) {
-                if ((this.tableΠίνακας1 != null)) {
-                    this.tableΠίνακας1.InitVars();
+                if ((this.tablecontacts != null)) {
+                    this.tablecontacts.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace ComputerMindTest {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "contactsDataSet1";
+            this.DataSetName = "DataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/contactsDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableΠίνακας1 = new Πίνακας1DataTable();
-            base.Tables.Add(this.tableΠίνακας1);
+            this.tablecontacts = new contactsDataTable();
+            base.Tables.Add(this.tablecontacts);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeΠίνακας1() {
+        private bool ShouldSerializecontacts() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace ComputerMindTest {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            contactsDataSet1 ds = new contactsDataSet1();
+            DataSet1 ds = new DataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,16 +270,14 @@ namespace ComputerMindTest {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void Πίνακας1RowChangeEventHandler(object sender, Πίνακας1RowChangeEvent e);
+        public delegate void contactsRowChangeEventHandler(object sender, contactsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Πίνακας1DataTable : global::System.Data.TypedTableBase<Πίνακας1Row> {
-            
-            private global::System.Data.DataColumn columnID;
+        public partial class contactsDataTable : global::System.Data.TypedTableBase<contactsRow> {
             
             private global::System.Data.DataColumn columnDay;
             
@@ -287,10 +285,12 @@ namespace ComputerMindTest {
             
             private global::System.Data.DataColumn columnPerson;
             
+            private global::System.Data.DataColumn columnID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1DataTable() {
-                this.TableName = "Πίνακας1";
+            public contactsDataTable() {
+                this.TableName = "contacts";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +298,7 @@ namespace ComputerMindTest {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Πίνακας1DataTable(global::System.Data.DataTable table) {
+            internal contactsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,17 +315,9 @@ namespace ComputerMindTest {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected Πίνακας1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected contactsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IDColumn {
-                get {
-                    return this.columnID;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -354,6 +346,14 @@ namespace ComputerMindTest {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -363,55 +363,55 @@ namespace ComputerMindTest {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1Row this[int index] {
+            public contactsRow this[int index] {
                 get {
-                    return ((Πίνακας1Row)(this.Rows[index]));
+                    return ((contactsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Πίνακας1RowChangeEventHandler Πίνακας1RowChanging;
+            public event contactsRowChangeEventHandler contactsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Πίνακας1RowChangeEventHandler Πίνακας1RowChanged;
+            public event contactsRowChangeEventHandler contactsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Πίνακας1RowChangeEventHandler Πίνακας1RowDeleting;
+            public event contactsRowChangeEventHandler contactsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event Πίνακας1RowChangeEventHandler Πίνακας1RowDeleted;
+            public event contactsRowChangeEventHandler contactsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddΠίνακας1Row(Πίνακας1Row row) {
+            public void AddcontactsRow(contactsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1Row AddΠίνακας1Row(string Day, string Shift, string Person) {
-                Πίνακας1Row rowΠίνακας1Row = ((Πίνακας1Row)(this.NewRow()));
+            public contactsRow AddcontactsRow(int Day, string Shift, string Person) {
+                contactsRow rowcontactsRow = ((contactsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
                         Day,
                         Shift,
-                        Person};
-                rowΠίνακας1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowΠίνακας1Row);
-                return rowΠίνακας1Row;
+                        Person,
+                        null};
+                rowcontactsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowcontactsRow);
+                return rowcontactsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1Row FindByID(int ID) {
-                return ((Πίνακας1Row)(this.Rows.Find(new object[] {
+            public contactsRow FindByID(int ID) {
+                return ((contactsRow)(this.Rows.Find(new object[] {
                             ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Πίνακας1DataTable cln = ((Πίνακας1DataTable)(base.Clone()));
+                contactsDataTable cln = ((contactsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -419,65 +419,64 @@ namespace ComputerMindTest {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Πίνακας1DataTable();
+                return new contactsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnID = base.Columns["ID"];
                 this.columnDay = base.Columns["Day"];
                 this.columnShift = base.Columns["Shift"];
                 this.columnPerson = base.Columns["Person"];
+                this.columnID = base.Columns["ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
-                this.columnDay = new global::System.Data.DataColumn("Day", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnDay = new global::System.Data.DataColumn("Day", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDay);
                 this.columnShift = new global::System.Data.DataColumn("Shift", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnShift);
                 this.columnPerson = new global::System.Data.DataColumn("Person", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPerson);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
+                this.columnShift.MaxLength = 255;
+                this.columnPerson.MaxLength = 255;
                 this.columnID.AutoIncrement = true;
                 this.columnID.AutoIncrementSeed = -1;
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.columnDay.MaxLength = 255;
-                this.columnShift.MaxLength = 255;
-                this.columnPerson.MaxLength = 255;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1Row NewΠίνακας1Row() {
-                return ((Πίνακας1Row)(this.NewRow()));
+            public contactsRow NewcontactsRow() {
+                return ((contactsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Πίνακας1Row(builder);
+                return new contactsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Πίνακας1Row);
+                return typeof(contactsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Πίνακας1RowChanged != null)) {
-                    this.Πίνακας1RowChanged(this, new Πίνακας1RowChangeEvent(((Πίνακας1Row)(e.Row)), e.Action));
+                if ((this.contactsRowChanged != null)) {
+                    this.contactsRowChanged(this, new contactsRowChangeEvent(((contactsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -485,8 +484,8 @@ namespace ComputerMindTest {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Πίνακας1RowChanging != null)) {
-                    this.Πίνακας1RowChanging(this, new Πίνακας1RowChangeEvent(((Πίνακας1Row)(e.Row)), e.Action));
+                if ((this.contactsRowChanging != null)) {
+                    this.contactsRowChanging(this, new contactsRowChangeEvent(((contactsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -494,8 +493,8 @@ namespace ComputerMindTest {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Πίνακας1RowDeleted != null)) {
-                    this.Πίνακας1RowDeleted(this, new Πίνακας1RowChangeEvent(((Πίνακας1Row)(e.Row)), e.Action));
+                if ((this.contactsRowDeleted != null)) {
+                    this.contactsRowDeleted(this, new contactsRowChangeEvent(((contactsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -503,14 +502,14 @@ namespace ComputerMindTest {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Πίνακας1RowDeleting != null)) {
-                    this.Πίνακας1RowDeleting(this, new Πίνακας1RowChangeEvent(((Πίνακας1Row)(e.Row)), e.Action));
+                if ((this.contactsRowDeleting != null)) {
+                    this.contactsRowDeleting(this, new contactsRowChangeEvent(((contactsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveΠίνακας1Row(Πίνακας1Row row) {
+            public void RemovecontactsRow(contactsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -519,7 +518,7 @@ namespace ComputerMindTest {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                contactsDataSet1 ds = new contactsDataSet1();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -537,7 +536,7 @@ namespace ComputerMindTest {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Πίνακας1DataTable";
+                attribute2.FixedValue = "contactsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -581,41 +580,30 @@ namespace ComputerMindTest {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Πίνακας1Row : global::System.Data.DataRow {
+        public partial class contactsRow : global::System.Data.DataRow {
             
-            private Πίνακας1DataTable tableΠίνακας1;
+            private contactsDataTable tablecontacts;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Πίνακας1Row(global::System.Data.DataRowBuilder rb) : 
+            internal contactsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableΠίνακας1 = ((Πίνακας1DataTable)(this.Table));
+                this.tablecontacts = ((contactsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int ID {
-                get {
-                    return ((int)(this[this.tableΠίνακας1.IDColumn]));
-                }
-                set {
-                    this[this.tableΠίνακας1.IDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Day {
+            public int Day {
                 get {
                     try {
-                        return ((string)(this[this.tableΠίνακας1.DayColumn]));
+                        return ((int)(this[this.tablecontacts.DayColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Day\' in table \'Πίνακας1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Day\' in table \'contacts\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableΠίνακας1.DayColumn] = value;
+                    this[this.tablecontacts.DayColumn] = value;
                 }
             }
             
@@ -624,14 +612,14 @@ namespace ComputerMindTest {
             public string Shift {
                 get {
                     try {
-                        return ((string)(this[this.tableΠίνακας1.ShiftColumn]));
+                        return ((string)(this[this.tablecontacts.ShiftColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Shift\' in table \'Πίνακας1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Shift\' in table \'contacts\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableΠίνακας1.ShiftColumn] = value;
+                    this[this.tablecontacts.ShiftColumn] = value;
                 }
             }
             
@@ -640,51 +628,62 @@ namespace ComputerMindTest {
             public string Person {
                 get {
                     try {
-                        return ((string)(this[this.tableΠίνακας1.PersonColumn]));
+                        return ((string)(this[this.tablecontacts.PersonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Person\' in table \'Πίνακας1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Person\' in table \'contacts\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableΠίνακας1.PersonColumn] = value;
+                    this[this.tablecontacts.PersonColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int ID {
+                get {
+                    return ((int)(this[this.tablecontacts.IDColumn]));
+                }
+                set {
+                    this[this.tablecontacts.IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsDayNull() {
-                return this.IsNull(this.tableΠίνακας1.DayColumn);
+                return this.IsNull(this.tablecontacts.DayColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDayNull() {
-                this[this.tableΠίνακας1.DayColumn] = global::System.Convert.DBNull;
+                this[this.tablecontacts.DayColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsShiftNull() {
-                return this.IsNull(this.tableΠίνακας1.ShiftColumn);
+                return this.IsNull(this.tablecontacts.ShiftColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetShiftNull() {
-                this[this.tableΠίνακας1.ShiftColumn] = global::System.Convert.DBNull;
+                this[this.tablecontacts.ShiftColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPersonNull() {
-                return this.IsNull(this.tableΠίνακας1.PersonColumn);
+                return this.IsNull(this.tablecontacts.PersonColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPersonNull() {
-                this[this.tableΠίνακας1.PersonColumn] = global::System.Convert.DBNull;
+                this[this.tablecontacts.PersonColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -692,22 +691,22 @@ namespace ComputerMindTest {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class Πίνακας1RowChangeEvent : global::System.EventArgs {
+        public class contactsRowChangeEvent : global::System.EventArgs {
             
-            private Πίνακας1Row eventRow;
+            private contactsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1RowChangeEvent(Πίνακας1Row row, global::System.Data.DataRowAction action) {
+            public contactsRowChangeEvent(contactsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Πίνακας1Row Row {
+            public contactsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -723,7 +722,7 @@ namespace ComputerMindTest {
         }
     }
 }
-namespace ComputerMindTest.contactsDataSet1TableAdapters {
+namespace ComputerMindTest.DataSet1TableAdapters {
     
     
     /// <summary>
@@ -735,7 +734,7 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Πίνακας1TableAdapter : global::System.ComponentModel.Component {
+    public partial class contactsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.OleDb.OleDbDataAdapter _adapter;
         
@@ -749,7 +748,7 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Πίνακας1TableAdapter() {
+        public contactsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -846,48 +845,48 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
             this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Πίνακας1";
-            tableMapping.ColumnMappings.Add("ID", "ID");
+            tableMapping.DataSetTable = "contacts";
             tableMapping.ColumnMappings.Add("Day", "Day");
             tableMapping.ColumnMappings.Add("Shift", "Shift");
             tableMapping.ColumnMappings.Add("Person", "Person");
+            tableMapping.ColumnMappings.Add("ID", "ID");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM `Πίνακας1` WHERE ((`ID` = ?) AND ((? = 1 AND `Day` IS NULL) OR (`Day`" +
-                " = ?)) AND ((? = 1 AND `Shift` IS NULL) OR (`Shift` = ?)) AND ((? = 1 AND `Perso" +
-                "n` IS NULL) OR (`Person` = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM `contacts` WHERE (((? = 1 AND `Day` IS NULL) OR (`Day` = ?)) AND ((? " +
+                "= 1 AND `Shift` IS NULL) OR (`Shift` = ?)) AND ((? = 1 AND `Person` IS NULL) OR " +
+                "(`Person` = ?)) AND (`ID` = ?))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Day", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Day", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Day", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Shift", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shift", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Shift", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shift", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Person", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Person", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Person", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Person", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Πίνακας1` (`Day`, `Shift`, `Person`) VALUES (?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `contacts` (`Day`, `Shift`, `Person`) VALUES (?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Day", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Day", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shift", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shift", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Person", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Person", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE `Πίνακας1` SET `Day` = ?, `Shift` = ?, `Person` = ? WHERE ((`ID` = ?) AND " +
-                "((? = 1 AND `Day` IS NULL) OR (`Day` = ?)) AND ((? = 1 AND `Shift` IS NULL) OR (" +
-                "`Shift` = ?)) AND ((? = 1 AND `Person` IS NULL) OR (`Person` = ?)))";
+            this._adapter.UpdateCommand.CommandText = "UPDATE `contacts` SET `Day` = ?, `Shift` = ?, `Person` = ? WHERE (((? = 1 AND `Da" +
+                "y` IS NULL) OR (`Day` = ?)) AND ((? = 1 AND `Shift` IS NULL) OR (`Shift` = ?)) A" +
+                "ND ((? = 1 AND `Person` IS NULL) OR (`Person` = ?)) AND (`ID` = ?))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Day", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Day", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Shift", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shift", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Person", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Person", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Day", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Day", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Day", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Day", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Shift", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shift", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Shift", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Shift", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Person", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Person", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Person", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Person", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -903,7 +902,7 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, [Day], Shift, Person FROM Πίνακας1";
+            this._commandCollection[0].CommandText = "SELECT [Day], Shift, Person, ID FROM contacts";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -911,7 +910,7 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(contactsDataSet1.Πίνακας1DataTable dataTable) {
+        public virtual int Fill(DataSet1.contactsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -924,9 +923,9 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual contactsDataSet1.Πίνακας1DataTable GetData() {
+        public virtual DataSet1.contactsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            contactsDataSet1.Πίνακας1DataTable dataTable = new contactsDataSet1.Πίνακας1DataTable();
+            DataSet1.contactsDataTable dataTable = new DataSet1.contactsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -934,15 +933,15 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(contactsDataSet1.Πίνακας1DataTable dataTable) {
+        public virtual int Update(DataSet1.contactsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(contactsDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "Πίνακας1");
+        public virtual int Update(DataSet1 dataSet) {
+            return this.Adapter.Update(dataSet, "contacts");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -959,155 +958,6 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         public virtual int Update(global::System.Data.DataRow[] dataRows) {
             return this.Adapter.Update(dataRows);
         }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_Day, string Original_Shift, string Original_Person) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_Day == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Day));
-            }
-            if ((Original_Shift == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Shift));
-            }
-            if ((Original_Person == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Person));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Day, string Shift, string Person) {
-            if ((Day == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Day));
-            }
-            if ((Shift == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Shift));
-            }
-            if ((Person == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Person));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Day, string Shift, string Person, int Original_ID, string Original_Day, string Original_Shift, string Original_Person) {
-            if ((Day == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Day));
-            }
-            if ((Shift == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Shift));
-            }
-            if ((Person == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Person));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_ID));
-            if ((Original_Day == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_Day));
-            }
-            if ((Original_Shift == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Shift));
-            }
-            if ((Original_Person == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Person));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
     }
     
     /// <summary>
@@ -1122,7 +972,7 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         
         private UpdateOrderOption _updateOrder;
         
-        private Πίνακας1TableAdapter _πίνακας1TableAdapter;
+        private contactsTableAdapter _contactsTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1144,12 +994,12 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Πίνακας1TableAdapter Πίνακας1TableAdapter {
+        public contactsTableAdapter contactsTableAdapter {
             get {
-                return this._πίνακας1TableAdapter;
+                return this._contactsTableAdapter;
             }
             set {
-                this._πίνακας1TableAdapter = value;
+                this._contactsTableAdapter = value;
             }
         }
         
@@ -1172,9 +1022,9 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._πίνακας1TableAdapter != null) 
-                            && (this._πίνακας1TableAdapter.Connection != null))) {
-                    return this._πίνακας1TableAdapter.Connection;
+                if (((this._contactsTableAdapter != null) 
+                            && (this._contactsTableAdapter.Connection != null))) {
+                    return this._contactsTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1189,7 +1039,7 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._πίνακας1TableAdapter != null)) {
+                if ((this._contactsTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1201,14 +1051,14 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(contactsDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._πίνακας1TableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Πίνακας1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._contactsTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.contacts.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._πίνακας1TableAdapter.Update(updatedRows));
+                    result = (result + this._contactsTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1220,13 +1070,13 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(contactsDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._πίνακας1TableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Πίνακας1.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._contactsTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.contacts.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._πίνακας1TableAdapter.Update(addedRows));
+                    result = (result + this._contactsTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1238,13 +1088,13 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(contactsDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._πίνακας1TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Πίνακας1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._contactsTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.contacts.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._πίνακας1TableAdapter.Update(deletedRows));
+                    result = (result + this._contactsTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1280,15 +1130,15 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(contactsDataSet1 dataSet) {
+        public virtual int UpdateAll(DataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._πίνακας1TableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._πίνακας1TableAdapter.Connection) == false))) {
+            if (((this._contactsTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._contactsTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1324,13 +1174,13 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._πίνακας1TableAdapter != null)) {
-                    revertConnections.Add(this._πίνακας1TableAdapter, this._πίνακας1TableAdapter.Connection);
-                    this._πίνακας1TableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
-                    this._πίνακας1TableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
-                    if (this._πίνακας1TableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._πίνακας1TableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._πίνακας1TableAdapter.Adapter);
+                if ((this._contactsTableAdapter != null)) {
+                    revertConnections.Add(this._contactsTableAdapter, this._contactsTableAdapter.Connection);
+                    this._contactsTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
+                    this._contactsTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
+                    if (this._contactsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._contactsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._contactsTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1391,9 +1241,9 @@ namespace ComputerMindTest.contactsDataSet1TableAdapters {
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._πίνακας1TableAdapter != null)) {
-                    this._πίνακας1TableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._πίνακας1TableAdapter]));
-                    this._πίνακας1TableAdapter.Transaction = null;
+                if ((this._contactsTableAdapter != null)) {
+                    this._contactsTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._contactsTableAdapter]));
+                    this._contactsTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
